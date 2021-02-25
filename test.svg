@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<?xml-stylesheet type="text/css" href="test.css" ?>
+<?xml-stylesheet type="text/css" href="http://same.lvh.me:8000/test.css" ?>
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100px" height="100px">
     <style>
@@ -93,14 +93,14 @@
         <text y="4">2</text>
     </g>
     <g class="number">
-        <image href="test-ext.svg" />
+        <image href="http://same.lvh.me:8000/test-ext.svg" />
         <circle r="10" />
         <text y="4">3</text>
     </g>
     <g class="number">
         <circle r="10" />
         <text y="4">4</text>
-        <use href="test-ext2.svg#number4" />
+        <use href="http://same.lvh.me:8000/test-ext2.svg#number4" />
     </g>
     <g class="number">
         <circle r="10" />
@@ -132,6 +132,6 @@
         sp.innerHTML = "&#9319;"
         body.appendChild(sp)
     </script>
-    <script href="test.js" ></script>
+    <script href="http://same.lvh.me:8000/test.js" ></script>
 
 </svg>
