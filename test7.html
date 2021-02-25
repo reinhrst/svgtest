@@ -1,0 +1,14 @@
+<html>
+    <link rel="stylesheet" href="testparent.css" />
+    <body>
+            <h1>svg</h1>
+            <script>
+                const xhttp = new XMLHttpRequest()
+                xhttp.open("GET", "http://same.lvh.me:8000/test.svg", false);
+                xhttp.send();
+                document.write(xhttp.responseText)
+
+                document.querySelectorAll("g.number:nth-of-type(7) :is(circle, text)").forEach((el) => el.style.opacity="100%")
+            </script>
+    </body>
+</html>

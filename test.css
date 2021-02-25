@@ -1,0 +1,3 @@
+g.number:nth-of-type(5) :is(circle, text) {
+    opacity: 100% !important;
+}

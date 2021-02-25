@@ -1,0 +1,51 @@
+img, div, canvas, object, embed, svg, iframe {
+    border: 1px solid black;
+}
+#cssbackground {
+    background-image: url(http://same.lvh.me:8000/test.svg);
+    width: 100px;
+    height: 100px;
+}
+#svgholder {
+    width: 100px;
+    height: 100px;
+}
+iframe.cell {
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 10px;
+    padding: 7px;
+    overflow: hidden;
+}
+
+h1 {
+    white-space: nowrap;
+}
+
+body > hr {
+    clear: both;
+}
+body > div.blocks {
+    clear: both;
+    border: none;
+}
+
+
+span.message {
+    display: block;
+    white-space: nowrap;
+}
+
+span.iwashere {
+    font-size: 30px;
+    display: block;
+    white-space: nowrap;
+    position: relative;
+    top: -40px;
+    left: 40px;
+}
+
+g.number:nth-of-type(9) :is(text, circle) {
+    opacity: 100% !important;
+}

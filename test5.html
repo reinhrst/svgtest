@@ -1,0 +1,18 @@
+<html>
+    <link rel="stylesheet" href="testparent.css" />
+    <body>
+            <h1>object</h1>
+            <object data="http://same.lvh.me:8000/test.svg"></object>
+    </body>
+    <script>
+        const stop = window.setTimeout(() => {
+            let svgdoc = document.querySelector("object").contentDocument
+            if (!svgdoc) {
+                return;
+            }
+            const items = svgdoc.querySelectorAll("g.number:nth-of-type(7) :is(circle, text)")
+            items.forEach((el) => el.style.opacity="100%")
+        }, 200)
+    </script>
+
+</html>

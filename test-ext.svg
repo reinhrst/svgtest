@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="30px" viewBox="-15 -15 30 30">
+    <style>
+
+        text {
+            text-anchor: middle;
+            font-family: arial,sans-serif;
+            font-size: 12px;
+        }
+        </style>
+    <g class="number" style="fill: none; stroke: black; stroke-width: 2px">
+        <circle r="10" />
+        <text y="4">3</text>
+    </g>
+    <image href="test-ext2.svg" />
+    <script>
+    alert(1)
+    </script>
+</svg>
+

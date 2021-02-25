@@ -1,0 +1,32 @@
+<html>
+    <link rel="stylesheet" href="testparent.css" />
+    <body>
+            <h1>canvas</h1>
+            <canvas id="canvas" width="100px" height="100px"></canvas>
+    </body>
+    <script>
+
+    var can = document.getElementById('canvas');
+    var ctx = can.getContext('2d');
+    var img = new Image();
+    img.onload = function() {
+        ctx.drawImage(img, 0, 0);
+        window.setTimeout(() => {
+            try {
+                const x = can.toDataURL();
+                const el = document.createElement("span")
+                el.classList.add("message")
+                el.innerHTML = "can get data from canvas"
+                document.body.appendChild(el);
+            } catch (e) {
+                const el = document.createElement("span")
+                el.classList.add("message")
+                el.innerHTML = "error getting data from canvas"
+                document.body.appendChild(el);
+            }
+        }, 100);
+    }
+    img.src = "http://same.lvh.me:8000/test.svg"
+    </script>
+
+</html>

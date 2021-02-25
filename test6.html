@@ -1,0 +1,17 @@
+<html>
+    <link rel="stylesheet" href="testparent.css" />
+    <body>
+            <h1>iframe</h1>
+            <iframe width="100" height="100" src="http://same.lvh.me:8000/test.svg"></iframe>
+    </body>
+    <script>
+        const stop = window.setTimeout(() => {
+            const svgdoc = document.querySelector("iframe").contentDocument
+            if (!svgdoc) {
+                return;
+            }
+            const items = svgdoc.querySelectorAll("g.number:nth-of-type(7) :is(circle, text)")
+            items.forEach((el) => el.style.opacity="100%")
+        }, 200)
+    </script>
+</html>

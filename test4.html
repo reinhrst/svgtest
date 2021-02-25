@@ -1,0 +1,17 @@
+<html>
+    <link rel="stylesheet" href="testparent.css" />
+    <body>
+            <h1>embed</h1>
+            <embed src="http://same.lvh.me:8000/test.svg">
+    </body>
+    <script>
+        const stop = window.setTimeout(() => {
+            const svgdoc = document.querySelector("embed").getSVGDocument()
+            if (!svgdoc) {
+                return;
+            }
+            const items = svgdoc.querySelectorAll("g.number:nth-of-type(7) :is(circle, text)")
+            items.forEach((el) => el.style.opacity="100%")
+        }, 200)
+    </script>
+</html>
